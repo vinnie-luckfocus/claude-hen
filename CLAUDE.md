@@ -1,4 +1,6 @@
-# CLAUDE.md
+# claude-hen
+
+> 如同母鸡孵育新生命，本项目用于"孵化"新的开发项目——将本仓库的开发规范快速应用到 `eggs/` 目录中的新项目。
 
 本文档为 Claude Code (claude.ai/code) 提供本仓库的开发指导。
 
@@ -6,29 +8,16 @@
 
 本项目支持使用本仓库的规范初始化 `eggs/` 子文件夹中的项目。
 
-### 功能说明
+### 规则文件清单（6个）
 
-通过此功能，可以将本项目的开发规范（分形文档、Codex 审查、阶段管理等）快速应用到新项目中。
-
-### 前置条件
-
-- 待初始化项目已放入 `eggs/[项目名]/` 目录
-- 项目包含可识别的构建文件等
-
-### 使用方法
-
-1. 将待初始化的项目代码放入 `eggs/[项目名]/` 目录
-2. 在根目录要求 Claude 初始化项目，例如："请帮我初始化 eggs/project1"
-3. Claude 将按照本仓库的规范完成项目结构初始化
-
-
-**规则文件清单（6个）：**
-1. CLAUDE_TEMPLATE.md - CLAUDE.md模板
-2. FRACTAL_DOC.md - 分形文档规范
-3. FRACTAL_DOC_PROTOCOL.md - 执行协议
-4. CONTEXT_CHECKLIST.md - 回环检查清单
-5. PHASE_MANAGEMENT.md - 阶段管理
-6. CODE_REVIEW_CHECKLIST.md - Codex审查清单
+| # | 文件 | 说明 |
+|---|------|------|
+| 1 | CLAUDE_TEMPLATE.md | 项目根文档模板 |
+| 2 | FRACTAL_DOC.md | 分形文档规范 |
+| 3 | FRACTAL_DOC_PROTOCOL.md | 执行协议 |
+| 4 | CONTEXT_CHECKLIST.md | 回环检查清单 |
+| 5 | PHASE_MANAGEMENT.md | 阶段管理规范 |
+| 6 | CODE_REVIEW_CHECKLIST.md | Codex 审查清单 |
 
 ### 初始化流程
 
@@ -36,7 +25,7 @@
 用户触发 → 技术栈检测 → 规范适配 → 创建CLAUDE.md → 创建/rules/ → 分形文档结构 → 文件头 → 构建验证 → 完成
 ```
 
-**详细步骤：**
+### 详细步骤
 
 1. **技术栈检测**：扫描项目中的构建文件
 2. **规范适配**：根据技术栈选择需要复制的规则文件
@@ -64,4 +53,5 @@
 
 ### 相关文档
 
-详细执行指南见：`rules/PROJECT_INIT_GUIDE.md`
+- 详细执行指南见：`rules/PROJECT_INIT_GUIDE.md`
+- 人类阅读说明见：`README.md`

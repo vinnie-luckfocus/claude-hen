@@ -6,10 +6,12 @@
 
 ## 背景
 
-当前项目（planck Mini & Air 智能牙刷固件）已经建立了一套成熟的开发规范，核心包括：
+claude-hen（母鸡孵小鸡）项目用于将开发规范快速部署到新项目，如同母鸡孵育新生命。
+
+当前项目已经建立了一套成熟的开发规范，核心包括：
 - 分形文档（三层文档结构）
 - 回环同构（代码变更后必更新文档）
-- Codex 代码审查
+- Codex 审查
 - 阶段规划文档更新
 - 阶段代码提交
 
@@ -24,7 +26,8 @@
 1. **CLAUDE.md** - 项目根目录入口文档
    - 包含项目概述、构建命令、模块结构、开发规范入口
 
-2. **/rules/** 文件夹 - 开发规范集合（5 个文档）
+2. **/rules/** 文件夹 - 开发规范集合（6 个文档）
+   - CLAUDE_TEMPLATE.md - 项目根文档模板
    - FRACTAL_DOC.md - 分形文档规范
    - CONTEXT_CHECKLIST.md - 回环检查清单
    - FRACTAL_DOC_PROTOCOL.md - 执行协议
@@ -227,7 +230,7 @@
 ## 验收标准
 
 - [ ] CLAUDE.md 模板包含所有必要章节：项目概述、构建命令、模块结构、架构说明、开发规范入口、最近变更记录（对应验证1-V01）
-- [ ] /rules/ 文件夹包含 5 个规则文档：FRACTAL_DOC.md、CONTEXT_CHECKLIST.md、FRACTAL_DOC_PROTOCOL.md、PHASE_MANAGEMENT.md、CODE_REVIEW_CHECKLIST.md（对应验证2-V02）
+- [ ] /rules/ 文件夹包含 6 个规则文档：CLAUDE_TEMPLATE.md、FRACTAL_DOC.md、CONTEXT_CHECKLIST.md、FRACTAL_DOC_PROTOCOL.md、PHASE_MANAGEMENT.md、CODE_REVIEW_CHECKLIST.md（对应验证2-V02）
 - [ ] 回环检查清单包含 ≥15 项检查点（对应验证2-V03）
 - [ ] Codex 审查清单包含 ≥15 项检查点（对应验证2-V04）
 - [ ] 阶段管理规范包含：阶段划分原则、规划文档更新要求、代码提交时机（对应验证2-V05）
@@ -252,7 +255,7 @@
   - V04: Codex 审查清单 ≥15 项
   - V05: 阶段管理规范完整
 - **测试方法**：
-  1. 检查 /rules/ 文件夹中是否存在 5 个规则文档：FRACTAL_DOC.md、CONTEXT_CHECKLIST.md、FRACTAL_DOC_PROTOCOL.md、PHASE_MANAGEMENT.md、CODE_REVIEW_CHECKLIST.md
+  1. 检查 /rules/ 文件夹中是否存在 6 个规则文档：CLAUDE_TEMPLATE.md、FRACTAL_DOC.md、CONTEXT_CHECKLIST.md、FRACTAL_DOC_PROTOCOL.md、PHASE_MANAGEMENT.md、CODE_REVIEW_CHECKLIST.md
   2. 统计回环检查清单（CONTEXT_CHECKLIST.md）的检查点数量
   3. 统计 Codex 审查清单（CODE_REVIEW_CHECKLIST.md）的检查点数量
   4. 检查阶段管理规范（PHASE_MANAGEMENT.md）是否包含阶段划分原则、规划文档更新要求、代码提交时机
@@ -266,7 +269,7 @@
 
 ## 相关文档
 
-- `/rules/FRACTAL_DOC.md` - 当前分形文档规范
-- `/rules/CONTEXT_CHECKLIST.md` - 当前上下文控制清单
-- `/rules/FRACTAL_DOC_PROTOCOL.md` - 当前分形文档执行协议
-- `/CLAUDE.md` - 当前项目根文档（参考模板）
+- `rules/FRACTAL_DOC.md` - 当前分形文档规范
+- `rules/CONTEXT_CHECKLIST.md` - 当前上下文控制清单
+- `rules/FRACTAL_DOC_PROTOCOL.md` - 当前分形文档执行协议
+- `CLAUDE.md` - 当前项目根文档（参考模板）

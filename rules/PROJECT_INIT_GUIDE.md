@@ -1,6 +1,6 @@
 # 项目初始化执行指南
 
-本文档描述如何将本仓库的开发规范初始化到 `eggs/` 子文件夹中的项目。
+如同母鸡孵育新生命，本指南描述如何将 claude-hen 的开发规范"孵化"到 `eggs/` 子文件夹中的新项目。
 
 ---
 
@@ -53,17 +53,6 @@
 | ESP-IDF v4.x | 全部6个 | 完整适配（提示API差异） |
 | 其他嵌入式 | 5个（去CODE_REVIEW） | 简化适配 |
 | 通用项目 | 3个（FRACTAL_DOC + PROTOCOL + 审查） | 最简化 |
-
-### 必选规则说明
-
-| 规则文件 | 用途 |
-|---------|------|
-| CLAUDE_TEMPLATE.md | 生成项目根目录 CLAUDE.md |
-| FRACTAL_DOC.md | 分形文档规范 |
-| FRACTAL_DOC_PROTOCOL.md | 执行协议+模板 |
-| CONTEXT_CHECKLIST.md | 回环检查清单 |
-| PHASE_MANAGEMENT.md | 阶段管理 |
-| CODE_REVIEW_CHECKLIST.md | Codex 审查清单 |
 
 ---
 
